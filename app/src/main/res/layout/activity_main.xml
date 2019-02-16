@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:showAsAction="always"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/displayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Display text"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="341dp" />
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="115dp" />
 
     <TextView
         android:id="@+id/displayText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="396dp" />
-</android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+</LinearLayout>
