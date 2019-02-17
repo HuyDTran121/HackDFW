@@ -30,4 +30,9 @@
         tools:layout_editor_absoluteX="172dp"
         tools:layout_editor_absoluteY="213dp" />
 
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>

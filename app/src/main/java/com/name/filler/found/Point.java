@@ -30,13 +30,10 @@ public class Point implements Serializable {
         this.y = y;
     }
 
-    private void writeObject(ObjectOutputStream out) throws IOException {
-        out.write(x);
-        out.write(y);
-    }
+//    private void writeObject(ObjectOutputStream out) throws IOException {
+//        out.write(x);
+//        out.write(y);
+//    }
 
-    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-        x = in.readInt();
-        y = in.readInt();
-    }
+
 }

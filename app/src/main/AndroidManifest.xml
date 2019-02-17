@@ -3,6 +3,8 @@
     package="com.name.filler.found">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.Manifest.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.Manifest.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"

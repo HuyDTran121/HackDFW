@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 public class Item implements Serializable {
     private String name;
-    private Bitmap image;
+    private byte[] image;
     private Point upperLeft;
     private Point lowerRight;
     private int id;
@@ -21,7 +21,7 @@ public class Item implements Serializable {
         id= 0;
     }
 
-    public Item(String name, Bitmap image, Point upperLeft, Point lowerRight, int id) {
+    public Item(String name, byte[] image, Point upperLeft, Point lowerRight, int id) {
         this.name = name;
         this.image = image;
         this.upperLeft = upperLeft;
@@ -37,11 +37,11 @@ public class Item implements Serializable {
         this.name = name;
     }
 
-    public Bitmap getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(Bitmap image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 
@@ -69,18 +69,18 @@ public class Item implements Serializable {
         this.id = id;
     }
 
-    private void writeObject(ObjectOutputStream out) throws IOException{
-        out.writeUTF(name);
-        out.writeObject(image);
-        out.writeObject(upperLeft);
-        out.writeObject(lowerRight);
-        out.write(id);
-    }
-    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException{
-        name = in.readUTF();
-        image = (Bitmap)in.readObject();
-        upperLeft = (Point)in.readObject();
-        lowerRight = (Point)in.readObject();
-        id = in.readInt();
-    }
+//    private void writeObject(ObjectOutputStream out) throws IOException{
+//        out.writeUTF(name);
+//        out.writeObject(image);
+//        out.writeObject(upperLeft);
+//        out.writeObject(lowerRight);
+//        out.write(id);
+//    }
+//    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException{
+//        name = in.readUTF();
+//        image = (Bitmap)in.readObject();
+//        upperLeft = (Point)in.readObject();
+//        lowerRight = (Point)in.readObject();
+//        id = in.readInt();
+//    }
 }
