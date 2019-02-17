@@ -19,7 +19,7 @@
         android:id="@+id/displayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Display text"
+        android:text="Search"
         tools:layout_editor_absoluteX="134dp"
         tools:layout_editor_absoluteY="115dp" />
 
@@ -33,6 +33,7 @@
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
 
 </LinearLayout>
